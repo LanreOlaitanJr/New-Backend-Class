@@ -15,6 +15,7 @@ connectDB();
 
 // Middleware
 app.use(express.json());
+app.use(express.urlencoded({ extended: true}))
 
 // Testing general route
 app.get('/api', (req, res) => {
